@@ -1,0 +1,55 @@
+# Hermes runtime state — never commit
+.env
+auth.json
+auth.lock
+.state.db*
+projects.db*
+.skills_prompt_snapshot.json
+context_length_cache.yaml
+provider_models_cache.json
+ollama_cloud_models_cache.json
+cron/
+memories/
+logs/
+cache/
+runtime/
+backups/
+.curator_backups/
+state-snapshots/
+desktop/
+home/
+hooks/
+image_cache/
+audio_cache/
+pairing/
+plans/
+sessions/
+skins/
+workspace/
+
+# Lock files
+*.lock
+.backup.lock
+.tick.lock
+.jobs.lock
+lock.json
+
+# Binary / platform-specific
+bin/tirith
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Large binaries (paper templates)
+skills/research/research-paper-writing/templates/**/*.pdf
+skills/**/.curator_backups/
+skills/**/.usage.json
+skills/**/.bundled_manifest
+skills/**/.curator_state
+skills/**/.curator_ledger.jsonl
+skills/**/.usage.json.lock

@@ -1,0 +1,7 @@
+# Track symlinks as symlinks (mode 120000) so they clone correctly on macOS/Linux.
+# rsync preserves them; this is a safety net if the repo is re-packed.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+*.db binary
